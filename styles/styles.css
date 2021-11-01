@@ -260,6 +260,48 @@ li {
     width: 100%;
 }
 
+/*ESTILOS EXPERIENCE*/
+.experience {
+    margin-top: 70vh;
+    padding: 25px 15px;
+}
+.experience__img {
+    border-radius: 8px;
+}
+.experience__img {
+    width: 100%;
+}
+.experience__divtxt {
+    margin-top: 30px;
+}
+.experience__p-1 {
+    color: #d90429;
+    margin: 0;
+    text-transform: uppercase;
+}
+.experience__h2 {
+    margin: 0;
+    font-size: 2em;
+}
+.experience__p-2 {
+    color: #787e92;
+    padding-bottom: 30px;
+    margin: 0;
+    margin-top: 20px;
+}
+.experience__button {
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #d90429;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+
+
+
+
 
 
 
