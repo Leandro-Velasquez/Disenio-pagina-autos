@@ -65,6 +65,7 @@ li {
     opacity: 0;
     visibility: hidden;
     transition: .4s;
+    display: none;
 }
 .menu__div {
     padding: 35px 0;
@@ -310,6 +311,7 @@ li {
     opacity: 1;
     visibility: visible;
     transition: .6s;
+    display: block;
 }
 .background-white {
     background-color: white;
