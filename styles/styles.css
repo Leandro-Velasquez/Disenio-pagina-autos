@@ -113,6 +113,8 @@ li {
     transition: .5s;
 }
 
+
+
 /*ESTILOS SLIDER MENU*/
 .slider {
     position: relative;
@@ -120,11 +122,12 @@ li {
     padding: 0;
     margin: 0;
 }
+.slider__li {
+    position: relative;
+    height: 80vh;
+}
 .slider__li--1, .slider__li--2, .slider__li--3 {
     
-}
-.slider__li {
-    height: 80vh;
 }
 .slider__h2 {
     margin: 0;
@@ -188,8 +191,11 @@ li {
     transition: all .7s;
 }
 
+
+
+
 .section-header-slider {
-    position: relative;
+    
 }
 .menu-slider {
 
