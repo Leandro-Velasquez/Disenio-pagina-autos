@@ -116,6 +116,9 @@ li {
 
 
 /*ESTILOS SLIDER MENU*/
+.section-header-slider {
+    position: relative;
+}
 .slider {
     position: relative;
     top: 0;
@@ -127,7 +130,7 @@ li {
     height: 80vh;
 }
 .slider__li--1, .slider__li--2, .slider__li--3 {
-    
+
 }
 .slider__h2 {
     margin: 0;
@@ -194,19 +197,30 @@ li {
 
 
 
-.section-header-slider {
-    
-}
+/*ESTILOS MENU SLIDER*/
 .menu-slider {
-
+    display: flex;
+    
+    padding: 0;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-28%);
 }
 .menu-slider__li {
         
 }
-.menu-slider__li a {
-
+.menu-slider__div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 15px;
 }
-
+.menu-slider__div--modified-1 {
+    background-color: #d90429;
+}
 
 
 /*Clases javascript*/
