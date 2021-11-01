@@ -20,7 +20,13 @@ li {
 .header {
     position: relative;
 }
-
+.header__div-nav {
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .nav {
     position: relative;
     padding: 15px;
@@ -45,6 +51,7 @@ li {
     border: none;
     padding: 4px 12px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .fa-bars {
     color: white;
@@ -108,10 +115,13 @@ li {
 
 /*ESTILOS SLIDER MENU*/
 .slider {
-    position: absolute;
+    position: relative;
     top: 0;
     padding: 0;
     margin: 0;
+}
+.slider__li--1, .slider__li--2, .slider__li--3 {
+    
 }
 .slider__li {
     height: 80vh;
@@ -126,9 +136,6 @@ li {
     display: block;
     width: 100%;
     height: 100%;
-}
-.slider__li {
-    position: relative;
 }
 .slider__li::before {
     content: "";
@@ -181,6 +188,18 @@ li {
     transition: all .7s;
 }
 
+.section-header-slider {
+    position: relative;
+}
+.menu-slider {
+
+}
+.menu-slider__li {
+        
+}
+.menu-slider__li a {
+
+}
 
 
 
@@ -192,4 +211,12 @@ li {
 }
 .background-white {
     background-color: white;
+}
+.down-menu {
+    width: 100%;
+    transition: .8s;
+    background-color: white;
+}
+.down-menu h1{
+    color: black;
 }
