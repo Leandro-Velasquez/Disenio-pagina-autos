@@ -467,10 +467,66 @@ li {
     transition: 0.5s;
 }
 
+/*ESTILOS CONTACT-US*/
+.contact-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/car6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 50px 15px;
+}
+.contact-us h3 {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+.contact-us-div1 p:nth-child(1) {
+    text-transform: uppercase;
+    color: #d90429;
+    margin: 0;
+}
+.contact-us-div1 p:nth-child(3) {
+    color: white;
+    margin: 0;
+}
+.contact-us-div1 p:nth-child(4) {
+    color: #d90429;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact-us-div2 {
 
-
-
-
+}
+.contact-us-div2 a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.contact-us-div2__button1 {
+    color: white;
+    font-weight: bolder;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 12px 0px;
+}
+.contact-us-div2__button1:hover {
+    background-color: white;
+    color: #d90429;
+    transition: .5s;
+}
+.contact-us-div2__button2 {
+    color: #d90429;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: white;
+    padding: 12px 0px;
+}
+.contact-us-div2__button2:hover {
+    color: white;
+    background-color: #d90429;
+    transition: .5s;
+}
 
 
 /*Clases javascript*/
