@@ -376,6 +376,103 @@ li {
     text-align: center;
 }
 
+/*ESTILOS PACKAGES*/
+.packages {
+    background-color: rgba(147, 107, 232, 0.02);
+    padding: 45px 15px;
+}
+.packages-div-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.packages-div-title p:nth-child(1) {
+    color: #d90429;
+    text-transform: uppercase;
+    margin: 0;
+}
+.packages-div-title h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+.packages-div-title p:nth-child(3) {
+    margin: 0;
+    color: #787e92;
+}
+.packages__div-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.packages-target {
+    background-color: rgba(219, 219, 219, 0.2);
+    border-radius: 5px;
+    border-top: 2px solid black;
+    width: 100%;
+    padding: 30px 45px;
+    margin-bottom: 30px;
+}
+.packages-target--modified {
+    border-top: 2px solid #d90429;
+}
+.packages-target--modified-red-title:hover {
+    border-top: 2px solid #d90429;
+    transition: 0.3s;
+}
+.packages-target--modified-red-title:hover .packages-target__price {
+    color: #d90429;
+    transition: 0.3s;
+}
+.packages-target__h3 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.packages-target__span {
+    font-weight: lighter;
+    font-size: 0.5em;
+    vertical-align: super;
+}
+.packages-target__price {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.packages-target__ul {
+    padding: 0;
+    margin-bottom: 30px;
+}
+.packages-target__ul i {
+    color: #d90429;
+    margin-right: 7px;
+    font-size: 0.7em;
+}
+.packages-target__ul p {
+    color: #787e92;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 4px 0px;
+}
+.packages-target__button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #d90429;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.packages-target__button:hover {
+    background-color: #011627;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
 /*Clases javascript*/
 .menu-visible{
     opacity: 1;
