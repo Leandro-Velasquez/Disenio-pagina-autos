@@ -299,8 +299,39 @@ li {
     border-radius: 5px;
 }
 
+/*ESTILOS SERVICES*/
+.services {
+    background-color: rgba(147, 107, 232, 0.05);
+    padding: 35px 15px;
+    text-align: center;
+}
+.services-container-1 {
 
-
+}
+.services-container-1__p1 {
+    color: #d90429;
+    text-transform: uppercase;
+    margin: 0;
+}
+.services-container-1__h2 {
+    margin: 0;
+    font-size: 2.4em;
+}
+.services-container-1__p2 {
+    margin: 0;
+    color: #787e92;
+}
+.services__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+.services__info {
+    margin: 40px 0px;
+}
 
 
 
