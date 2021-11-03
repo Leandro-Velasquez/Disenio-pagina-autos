@@ -105,8 +105,12 @@ menuSlider.addEventListener('click', (e) => {
 
 
 
-
-
+const nav = document.getElementById('nav');
+const navH1 = document.getElementById('nav__h1');
+window.addEventListener('scroll', () => {
+    nav.classList.toggle("down-menu", window.scrollY>50)
+    navH1.classList.toggle("down-menu-h1", window.scrollY>50)
+})
 
 
 
