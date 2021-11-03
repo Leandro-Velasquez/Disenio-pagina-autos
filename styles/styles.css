@@ -602,7 +602,167 @@ li {
 }
 
 
+/*ESTILOS FOOTER*/
+.newsletter {
+    padding: 30px 15px;
+    background-color: black;
+    color: #40434c;
+    position: relative;
+}
+.newsletter::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    border: 1px solid rgba(238, 238, 238, 0.4);
+}
+.newsletter__h2 {
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+.newsletter__p {
+    margin: 10px 0px;
+    margin-bottom: 30px;
+}
+.newsletter__div-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.newsletter__input {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+}
+.newsletter__button {
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d90429;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+.newsletter__button:hover {
+    background-color: #2b2d42;
+    transition: .4s;
+}
+.carserving {
+    padding: 30px 15px;
+    background-color: black;
+    color: #40434c;
+}
+.carserving-div-1 {
 
+}
+.carserving-div-1__h3 {
+
+}
+.carserving-div-1__a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.carserving-div-1__h3::first-letter {
+    color: #d90429;
+    font-family: 'Limelight';
+}
+.carserving-div-1__p {
+    
+}
+.carserving-div-1__ul {
+    padding: 0;
+    display: flex;
+}
+.carserving-div-1__ul i {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #14151f;
+    border-radius: 50%;
+}
+.carserving-div-1__ul i:hover {
+    background-color: #d90429;
+    transition: .5s;
+}
+.carserving-div-2__h3 {
+    color: white;
+}
+.carserving-div-2__container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.carserving-div-2__container-grid a {
+    color: #40434c;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.carserving-div-2__container-grid a:hover {
+    color: #d90429;
+    transition: .5s;
+}
+.carserving-div-2__container-grid i {
+    color: white;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+.carserving-div-3 {
+
+}
+.carserving-div-3__h3 {
+    color: white;
+}
+
+.carserving-div-3 a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.copyright {
+    padding: 8px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #14151f;
+}
+.copyright-div-1 {
+
+}
+.copyright-div-1__p {
+    color: #40434c;
+    font-size: 0.9em;
+}
+.copyright-div-2 {
+
+}
+.copyright-div-2__a {
+    color: #40434c;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.copyright-div-2__a:hover {
+    color: #d90429;
+    transition: .5s;
+}
+.copyright-div-2__span {
+    color: #40434c;
+}
 
 
 
