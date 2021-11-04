@@ -43,6 +43,7 @@ li {
     margin: 0;
     color: white;
     transition: .5s;
+    cursor: pointer;
 }
 .nav__h1::first-letter {
     font-family: 'Limelight';
@@ -291,7 +292,6 @@ li {
 
 /*ESTILOS EXPERIENCE*/
 .experience {
-    
     padding: 25px 15px;
 }
 .experience__img {
@@ -802,6 +802,40 @@ li {
     .slider__h2 {
         font-size: 3.5em;
     }
+    .services {
+        
+    }
+    .services-container-1 {
+    
+    }
+    .services-container-1__p1 {
+
+    }
+    .services-container-1__h2 {
+
+    }
+    .services-container-1__p2 {
+        margin: auto;
+        width: 60%;
+    }
+    .services__container-div-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .services__info {
+        width: 360px;
+    }
+    .services__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+    
+
 }
 @media screen and (max-width: 980px) {
     .info-page {
@@ -909,6 +943,49 @@ li {
     .menu__button:hover {
         background-color: #011627;
         transition: .3s;
+    }
+    /*ESTILOS EXPERIENCE*/
+    .experience {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px;
+    }
+    .experience__divimg {
+        display: flex;
+        width: 50%;
+    }
+    .experience__img {
+        width: 100%;
+    }
+    .experience__divtxt {
+        width: 45%;
+        position: relative;
+    }
+    .experience__divtxt-flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+    }
+    .experience__p-1 {
+
+    }
+    .experience__h2 {
+
+    }
+    .experience__p-2 {
+        margin-top: 0px;
+    }
+    .experience__button {
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media screen and (min-width: 1264px) {
+    .experience {
+        width: 90%;
+        margin: auto;
     }
 }
 @media screen and (min-width: 1300px) {
