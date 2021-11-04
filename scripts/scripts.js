@@ -107,9 +107,16 @@ menuSlider.addEventListener('click', (e) => {
 
 const nav = document.getElementById('nav');
 const navH1 = document.getElementById('nav__h1');
+const menuEnlacesArray = Array.from(document.querySelectorAll('.menu__a'));
+console.log(menuEnlacesArray);
 window.addEventListener('scroll', () => {
-    nav.classList.toggle("down-menu", window.scrollY>50)
-    navH1.classList.toggle("down-menu-h1", window.scrollY>50)
+    nav.classList.toggle("down-menu", window.scrollY>50);
+    navH1.classList.toggle("down-menu-h1", window.scrollY>50);
+    //menu__a.classList.toggle("menu-a-color-black", window.scrollY>50);
+    menuEnlacesArray.forEach((element) => {
+        element.classList.toggle("menu-a-color-black", window.scrollY>50);
+    })
+    menuEnlacesArray[0].classList.remove('menu-a-color-black');
 })
 
 

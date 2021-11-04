@@ -115,12 +115,15 @@ li {
     color: white;
     transition: .5s;
 }
-
+.menu__button {
+    display: none;
+}
 
 
 /*ESTILOS SLIDER MENU*/
 .section-header-slider {
     position: relative;
+    height: 90vh;
 }
 .slider {
     position: relative;
@@ -131,7 +134,7 @@ li {
 .slider__li {
     width: 100%;
     position: relative;
-    height: 70vh;
+    height: 90vh;
 }
 .slider__li--1, .slider__li--2, .slider__li--3 {
     position: absolute;
@@ -175,7 +178,7 @@ li {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 100;
-    width: 100%;
+    width: 90%;
     padding: 0 15px;
 }
 .slider__div-flex {
@@ -217,12 +220,18 @@ li {
 /*ESTILOS MENU SLIDER*/
 .menu-slider {
     display: flex;
-    
+    /*
     padding: 0;
     position: absolute;
     top: 0%;
     left: 50%;
     transform: translateX(-50%) translateY(2700%);
+    z-index: 100;
+    */
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    padding: 0;
     z-index: 100;
 }
 .menu-slider__li {
@@ -244,7 +253,6 @@ li {
 /*ESTILOS INFO PAGE*/
 .info-page {
     position: relative;
-    top: 70vh;
 }
 .info-page__h3{
     margin: 0;
@@ -266,7 +274,6 @@ li {
 
 /*ESTILOS EXPERIENCE*/
 .experience {
-    margin-top: 70vh;
     padding: 25px 15px;
 }
 .experience__img {
@@ -767,6 +774,118 @@ li {
     color: #40434c;
 }
 
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+    .slider__h2 {
+        font-size: 2.9em;
+    }
+}
+@media screen and (min-width: 876px) {
+    .slider__h2 {
+        font-size: 3.5em;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .slider__h2 {
+        font-size: 4.5em;
+    }
+    .header__div-nav {
+        
+    }
+    .nav {
+        display: flex;
+        align-items: baseline;
+    }
+    .nav__container-h1-btn {
+        
+    }
+    .nav__h1 {
+        font-weight: 500;
+        margin-right: 60px;
+    }
+    .nav__h1::first-letter {
+        
+    }
+    .btn-menu {
+        display: none;
+    }
+    .fa-bars {
+        
+    }
+    .menu {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        opacity: 1;
+        visibility: visible;
+        transition: none;
+        background-color: inherit;
+    }
+    .menu__div {
+        padding: 0;
+        display: flex;
+    }
+    .menu__item {
+        margin-right: 20px;
+    }
+    .menu__item--modified {
+        margin: 0;
+        padding: 0px;
+        border: none;
+    }
+    .menu__a {
+        color: white;
+        margin-bottom: 0;
+    }
+    .menu__a--home {
+        color: #d90429;
+    }
+    .fa-search {
+        height: 40px;
+        width: 40px;
+        background-color: rgb(189, 189, 189);
+        margin-right: 40px;
+    }
+    .menu div:nth-child(2) {
+        display: flex;
+    }
+    .menu__button {
+        display: initial;
+        text-decoration: none;
+        color: white;
+        background-color: #d90429;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+    .menu__button:hover {
+        background-color: #011627;
+        transition: .3s;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .menu-slider {
+        /*
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(3500%);
+        */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Clases javascript*/
@@ -787,6 +906,9 @@ li {
 .down-menu-h1{
     color: black;
     transition: .5s;
+}
+.menu-a-color-black {
+    color: black;
 }
 .mostrar-banner-slider {
     z-index: 2;
