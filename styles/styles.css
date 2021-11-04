@@ -252,21 +252,38 @@ li {
 
 /*ESTILOS INFO PAGE*/
 .info-page {
-    position: relative;
+    /*position: relative;*/
+    display: flex;
 }
+
+.info-page__div-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 1.2em;
+}
+
 .info-page__h3{
     margin: 0;
     color: white;
 }
 .info-page__div-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
     background-color: #14151f;
-    padding: 80px 25px;
+    padding: 0px 25px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .info-page__div-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
     background-color: black;
-    padding: 80px 25px;
+    padding: 0px 25px;
+}
+.info-page__div-3 {
+    display: flex;
 }
 .info-page__img {
     width: 100%;
@@ -274,6 +291,7 @@ li {
 
 /*ESTILOS EXPERIENCE*/
 .experience {
+    
     padding: 25px 15px;
 }
 .experience__img {
@@ -783,6 +801,36 @@ li {
 @media screen and (min-width: 876px) {
     .slider__h2 {
         font-size: 3.5em;
+    }
+}
+@media screen and (max-width: 980px) {
+    .info-page {
+
+    }
+    
+    .info-page__div-flex {
+        flex-wrap: wrap;
+    }
+    
+    .info-page__h3{
+
+    }
+    .info-page__div-1 {
+        width: 100%;
+        justify-content: center;
+        padding: 60px 25px;
+
+    }
+    .info-page__div-2 {
+        width: 100%;
+        justify-content: center;
+        padding: 60px 25px;
+    }
+    .info-page__div-3 {
+
+    }
+    .info-page__img {
+
     }
 }
 @media screen and (min-width: 1024px) {
