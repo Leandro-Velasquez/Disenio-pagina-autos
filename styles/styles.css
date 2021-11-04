@@ -221,14 +221,6 @@ li {
 /*ESTILOS MENU SLIDER*/
 .menu-slider {
     display: flex;
-    /*
-    padding: 0;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%) translateY(2700%);
-    z-index: 100;
-    */
     position: absolute;
     top: 85%;
     left: 50%;
@@ -793,9 +785,32 @@ li {
 }
 
 /*MEDIA QUERIES*/
+@media screen and (min-width: 520px) {
+    .packages__div-flex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .packages-target {
+        width: 490px;
+        display: flex;
+        flex-direction: column;
+    }
+    .packages-target__button {
+        width: 180px;
+        display: inline-flex;
+        justify-content: center;
+    }
+}
 @media screen and (min-width: 768px) {
     .slider__h2 {
         font-size: 2.9em;
+    }
+    .packages__div-flex {
+
+    }
+    .packages-target {
+        width: 380px;
+        margin-right: 20px;
     }
 }
 @media screen and (min-width: 876px) {
@@ -1015,11 +1030,7 @@ li {
 }
 @media screen and (min-width: 1300px) {
     .menu-slider {
-        /*
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%) translateY(3500%);
-        */
+
     }
     .specification {
         background-position: center;
