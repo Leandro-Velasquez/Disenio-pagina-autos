@@ -2,6 +2,66 @@ const btnMenu = document.getElementById('btn-menu');
 const menu = document.getElementById('menu');
 
 const menuSlider = document.getElementById('menu-slider');
+const arrayItemsSlider = Array.from(document.querySelectorAll('.slider__li'));
+const arrayButtonsSliderMenu = Array.from(document.querySelectorAll('.menu-slider__div'));
+
+
+
+
+
+
+
+
+
+
+
+menuSlider.addEventListener('click', (e) => {
+    
+    arrayButtonsSliderMenu.forEach(button => {
+        if(button.id == e.target.id) {
+            arrayItemsSlider.forEach(itemSlider => {
+                if(button.id.slice(-1) == itemSlider.classList[1].slice(-1)) {
+                    arrayItemsSlider.forEach(el => {
+                        el.classList.remove('mostrar-banner-slider');
+                    })
+                    arrayButtonsSliderMenu.forEach(el => {
+                        el.classList.remove('menu-slider__div--modified-1', 'color-button-slider');
+                    })
+                    itemSlider.classList.add('mostrar-banner-slider');
+                    button.classList.add('color-button-slider');
+                }
+            })
+        }
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const itemSlider1 = document.querySelector('.slider__li--1')
 const itemSlider2 = document.querySelector('.slider__li--2')
 const itemSlider3 = document.querySelector('.slider__li--3')
@@ -18,6 +78,7 @@ const testimonialsButtonSlider1 = document.getElementById('testimonials-slider-b
 const testimonialsButtonSlider2 = document.getElementById('testimonials-slider-button2');
 const testimonialsButtonSlider3 = document.getElementById('testimonials-slider-button3');
 const testimonialsButtonSlider4 = document.getElementById('testimonials-slider-button4');
+
 
 
 testimonialsMenuSlider.addEventListener('click', (e) => {
@@ -72,35 +133,7 @@ btnMenu.addEventListener('click', () => {
     menu.classList.toggle('menu-visible')
 })
 
-menuSlider.addEventListener('click', (e) => {
-    if(e.target.id == "btn-menu-slider1"){
-        itemSlider1.classList.add("mostrar-banner-slider");
-        itemSlider2.classList.remove("mostrar-banner-slider");
-        itemSlider3.classList.remove("mostrar-banner-slider");
 
-        buttonSlider1.classList.add('color-button-slider');
-        buttonSlider2.classList.remove('color-button-slider');
-        buttonSlider3.classList.remove('color-button-slider');
-    }
-    else if(e.target.id == "btn-menu-slider2"){
-        itemSlider1.classList.remove("mostrar-banner-slider");
-        itemSlider2.classList.add("mostrar-banner-slider");
-        itemSlider3.classList.remove("mostrar-banner-slider");
-
-        buttonSlider1.classList.remove('color-button-slider', 'menu-slider__div--modified-1');
-        buttonSlider2.classList.add('color-button-slider');
-        buttonSlider3.classList.remove('color-button-slider');
-    }
-    else if(e.target.id == "btn-menu-slider3"){
-        itemSlider1.classList.remove("mostrar-banner-slider");
-        itemSlider2.classList.remove("mostrar-banner-slider");
-        itemSlider3.classList.add("mostrar-banner-slider");
-
-        buttonSlider1.classList.remove('color-button-slider', 'menu-slider__div--modified-1');
-        buttonSlider2.classList.remove('color-button-slider');
-        buttonSlider3.classList.add('color-button-slider');
-    }
-})
 
 
 
@@ -108,7 +141,7 @@ menuSlider.addEventListener('click', (e) => {
 const nav = document.getElementById('nav');
 const navH1 = document.getElementById('nav__h1');
 const menuEnlacesArray = Array.from(document.querySelectorAll('.menu__a'));
-console.log(menuEnlacesArray);
+
 window.addEventListener('scroll', () => {
     nav.classList.toggle("down-menu", window.scrollY>50);
     navH1.classList.toggle("down-menu-h1", window.scrollY>50);
