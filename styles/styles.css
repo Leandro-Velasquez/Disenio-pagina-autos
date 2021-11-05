@@ -670,6 +670,7 @@ li {
     color: white;
     font-weight: bolder;
     font-size: 1.1em;
+    cursor: pointer;
 }
 .newsletter__button:hover {
     background-color: #2b2d42;
@@ -702,6 +703,9 @@ li {
 .carserving-div-1__ul {
     padding: 0;
     display: flex;
+}
+.carserving-div-1__ul a {
+    text-decoration: none;
 }
 .carserving-div-1__ul i {
     margin-right: 10px;
@@ -800,6 +804,9 @@ li {
         display: inline-flex;
         justify-content: center;
     }
+    .target-testimonials__p1 {
+        width: 80%;
+    }
 }
 @media screen and (min-width: 640px) {
     .contact-us {
@@ -828,6 +835,18 @@ li {
         margin: 0;
         padding: 12px 25px;
     }
+
+    .copyright {
+
+    }
+    .copyright-div-1 {
+
+    }
+    .copyright-div-2 {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+    }
 }
 @media screen and (min-width: 768px) {
     .slider__h2 {
@@ -844,6 +863,15 @@ li {
     .contact-us__div-container-flex {
         width: 60%;
     }
+    .footer__div-container-1 {
+        width: 100%;
+        background-color: black;
+    }
+    .footer__div-container-2 {
+        width: 90%;
+        margin: auto;
+    }
+
 }
 @media screen and (min-width: 876px) {
     .slider__h2 {
@@ -910,6 +938,67 @@ li {
     .contact-us-div2__button2 {
 
     }
+    .footer__div-container-1 {
+        width: 100%;
+        background-color: black;
+    }
+    .footer__div-container-2 {
+        width: 80%;
+        margin: auto;
+    }
+    .newsletter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .newsletter div:nth-child(1) {
+        width: 500px;
+    }
+    .newsletter__div-flex {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 600px;
+    }
+    .newsletter__input {
+        width: 70%;
+        margin-right: 20px;
+        padding: 15px 14px;
+        border-radius: 5px;
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
+    .newsletter__button {
+        width: 25%;
+        padding: 15px 0px;
+        background-color: #d90429;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.1em;
+    }
+    .newsletter::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        border: 1px solid rgba(238, 238, 238, 0.4);
+    }
+    .carserving {
+        display: flex;
+    }
+    .carserving-div-1 {
+        width: 33%;
+    }
+    .carserving-div-2 {
+        width: 33%;
+    }
+    .carserving-div-2__container-grid a {
+        margin-bottom: 10px;
+    }
+    .carserving-div-3 {
+        width: 33%;
+    }
 }
 @media screen and (max-width: 980px) {
     .info-page {
@@ -939,6 +1028,19 @@ li {
     }
     .info-page__img {
 
+    }
+
+    .textimonials__div-container-target-testimonials {
+
+    }
+    .target-testimonials {
+
+    }
+    .target-testimonials__li div{
+        
+    }
+    .target-testimonials__p1 {
+        
     }
 }
 @media screen and (min-width: 1024px) {
